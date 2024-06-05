@@ -1,0 +1,38 @@
+/* div {
+  width: 200px;
+  height: 200px;
+  background-color: pink;
+} */
+
+.container {
+}
+.container .heroes {
+  display: flex;
+  /* flex-wrap: 줄바꿈 여부 */
+  flex-wrap: wrap;
+  background-color: pink;
+  /* justify-content: 수평 정렬; */
+  justify-content: center;
+  /* 넓이가 있고 margin이 auto면 자기자신 가운데 정렬 */
+  max-width: 700px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+.container .heroes .hero {
+  margin: 4px;
+  width: 80px;
+  height: 84px;
+  background-color: #555;
+  box-sizing: border-box;
+  border: 3px solid #fff;
+  transform: skewX(-14deg);
+  border-radius: 10px;
+  transition: transform 0.1s, background-color 0.6s;
+}
+.container .heroes .hero:hover {
+  background-color: #ff9c00;
+  transform: skewX(-14deg) scale(1.3);
+  z-index: 1;
+}
+.container .heroes .hero .image {
+}
